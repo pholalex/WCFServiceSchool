@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="PlanRecuperaciones" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/WCFServiceSchool.Errores" />
+      <xsd:import schemaLocation="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceSchool.Dominio" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IPlanRecuperaciones_CrearPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPlan" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_CrearPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CrearPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_CrearPlan_ExcepcionesFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceSchool.Errores" name="detail" element="q1:Excepciones" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ObtenerPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlan" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ObtenerPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObtenerPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ModificarPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPlan" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ModificarPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_EliminarPlan_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPlan" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_EliminarPlan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarPlanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ListarPlanRecuperacion_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPlanRecuperacion" />
+  </wsdl:message>
+  <wsdl:message name="IPlanRecuperaciones_ListarPlanRecuperacion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarPlanRecuperacionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IPlanRecuperaciones">
+    <wsdl:operation name="CrearPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanRecuperaciones/CrearPlan" message="tns:IPlanRecuperaciones_CrearPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanRecuperaciones/CrearPlanResponse" message="tns:IPlanRecuperaciones_CrearPlan_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IPlanRecuperaciones/CrearPlanExcepcionesFault" name="ExcepcionesFault" message="tns:IPlanRecuperaciones_CrearPlan_ExcepcionesFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ObtenerPlan" message="tns:IPlanRecuperaciones_ObtenerPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ObtenerPlanResponse" message="tns:IPlanRecuperaciones_ObtenerPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ModificarPlan" message="tns:IPlanRecuperaciones_ModificarPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ModificarPlanResponse" message="tns:IPlanRecuperaciones_ModificarPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPlan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanRecuperaciones/EliminarPlan" message="tns:IPlanRecuperaciones_EliminarPlan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanRecuperaciones/EliminarPlanResponse" message="tns:IPlanRecuperaciones_EliminarPlan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarPlanRecuperacion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ListarPlanRecuperacion" message="tns:IPlanRecuperaciones_ListarPlanRecuperacion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IPlanRecuperaciones/ListarPlanRecuperacionResponse" message="tns:IPlanRecuperaciones_ListarPlanRecuperacion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IPlanRecuperaciones" type="tns:IPlanRecuperaciones">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CrearPlan">
+      <soap:operation soapAction="http://tempuri.org/IPlanRecuperaciones/CrearPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExcepcionesFault">
+        <soap:fault use="literal" name="ExcepcionesFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerPlan">
+      <soap:operation soapAction="http://tempuri.org/IPlanRecuperaciones/ObtenerPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarPlan">
+      <soap:operation soapAction="http://tempuri.org/IPlanRecuperaciones/ModificarPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarPlan">
+      <soap:operation soapAction="http://tempuri.org/IPlanRecuperaciones/EliminarPlan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarPlanRecuperacion">
+      <soap:operation soapAction="http://tempuri.org/IPlanRecuperaciones/ListarPlanRecuperacion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="PlanRecuperaciones">
+    <wsdl:port name="BasicHttpBinding_IPlanRecuperaciones" binding="tns:BasicHttpBinding_IPlanRecuperaciones">
+      <soap:address location="http://localhost:57428/PlanRecuperaciones.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

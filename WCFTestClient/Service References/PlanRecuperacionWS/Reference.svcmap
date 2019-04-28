@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="cd9f41b7-ea42-4bdf-8d49-4d474055a96f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57428/PlanRecuperaciones.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PlanRecuperaciones.xsd" MetadataType="Schema" ID="57e5887a-46b6-42a8-a40f-3278d9671a81" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd0" />
+    <MetadataFile FileName="PlanRecuperaciones1.xsd" MetadataType="Schema" ID="99498ff4-b694-4de8-b73e-678ce9be64e5" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd1" />
+    <MetadataFile FileName="PlanRecuperaciones2.xsd" MetadataType="Schema" ID="b5ce37c7-cdfc-4a8a-ab29-5f0b113b424f" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd2" />
+    <MetadataFile FileName="PlanRecuperaciones3.xsd" MetadataType="Schema" ID="62adee1c-2eb5-409e-916c-d6fd3dbf252e" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?xsd=xsd3" />
+    <MetadataFile FileName="PlanRecuperaciones.wsdl" MetadataType="Wsdl" ID="ecbae961-8a9a-4fe2-bb46-1258907c5882" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?wsdl" />
+    <MetadataFile FileName="PlanRecuperaciones.disco" MetadataType="Disco" ID="fd590f24-aaf6-4327-8e50-d86a78b8df35" SourceId="1" SourceUrl="http://localhost:57428/PlanRecuperaciones.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
