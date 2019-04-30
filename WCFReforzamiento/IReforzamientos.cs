@@ -26,6 +26,8 @@ namespace WCFReforzamiento
         NotaExtra RegistrarNota(NotaExtra reforzamientoACrear);
         [OperationContract]
         NotaExtra ObtenerNota(string codreforzamiento);
+        
+        
 
         [OperationContract]
         NotaExtra ModificarNota(NotaExtra reforzamientoACrear);
