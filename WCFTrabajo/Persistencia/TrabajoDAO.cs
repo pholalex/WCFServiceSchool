@@ -11,6 +11,7 @@ namespace WCFTrabajo.Persistencia
     {
         private string CadenaConexion = "DATA SOURCE=xe;PASSWORD=oracle; USER ID=tutor;";
 
+        
         public List<Trabajo> Listar()
         {
             try
