@@ -3,6 +3,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace WCFTestClient
 {
+
+
     [TestClass]
     public class PlanRecuperacionTest
     {
