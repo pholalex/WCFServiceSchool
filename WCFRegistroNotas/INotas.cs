@@ -6,6 +6,8 @@ using System.ServiceModel;
 using System.Text;
 using WCFRegistroNotas.Dominio;
 
+
+
 namespace WCFRegistroNotas
 {
     // NOTA: puede usar el comando "Rename" del menú "Refactorizar" para cambiar el nombre de interfaz "INotas" en el código y en el archivo de configuración a la vez.
